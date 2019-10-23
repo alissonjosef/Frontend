@@ -1,9 +1,15 @@
 import React from 'react';
+import api from './services/api';
 import './App.css';
 
 import logo from './assets/logo.svg';
 
 function App() {
+  function handleSubmit(){
+    console.log("Hello Word");
+
+  }
+
   return (
 
     <div className="container">
@@ -14,7 +20,7 @@ function App() {
         Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
       </p>
 
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="email">E-MAIL *</label>
       <input 
       id="email" 
